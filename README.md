@@ -7,7 +7,8 @@ I will make notes about my journey into ML world.
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ## tests 
-
+# test images
+[Image](https://stephenhaunts.files.wordpress.com/2014/04/10-ways-to-be-a-better-developer.png)
 # test for python code 
 ```python
 """README, Author - Jigyasa Gandhi(mailto:jigsgandhi97@gmail.com)
