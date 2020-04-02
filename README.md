@@ -8,7 +8,7 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 
 ## tests 
 # test images
-[Image](https://stephenhaunts.files.wordpress.com/2014/04/10-ways-to-be-a-better-developer.png)
+![How to be a better developer](https://stephenhaunts.files.wordpress.com/2014/04/10-ways-to-be-a-better-developer.png)
 # test for python code 
 ```python
 """README, Author - Jigyasa Gandhi(mailto:jigsgandhi97@gmail.com)
