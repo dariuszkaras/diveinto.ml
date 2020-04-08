@@ -2,72 +2,15 @@
 
 I will make notes about my journey into ML world.
 
-### Markdown
+### Short term goals
+1. Get [AWS Certified Solutions Architect - Associate](https://youtu.be/Ia-UEYYR44s) till end of May
+2. I will start writing here :) 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### My setup and environment
+Hardware: HP Zbook G3 + 2x24" monitors AOC 
+OS: CentOS 8 ( RHEL based linux distro it was reason why I chose this one)
+Python env: [Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html)
+IDE: [Visual Studio Code](https://code.visualstudio.com/)
+IDE second choise: [Sublime Text 3](https://www.sublimetext.com/3) + VIM
 
-## tests 
-# test images
-![How to be a better developer](https://stephenhaunts.files.wordpress.com/2014/04/10-ways-to-be-a-better-developer.png)
-# test for python code 
-```python
-"""README, Author - Jigyasa Gandhi(mailto:jigsgandhi97@gmail.com)
-Requirements:
-  - scikit-fuzzy
-  - numpy
-  - matplotlib
-Python:
-  - 3.5
-"""
-import numpy as np
-import skfuzzy as fuzz
-
-
-if __name__ == "__main__":
-    # Create universe of discourse in Python using linspace ()
-    X = np.linspace(start=0, stop=75, num=75, endpoint=True, retstep=False)
-
-    # Create two fuzzy sets by defining any membership function (trapmf(), gbellmf(),gaussmf(), etc).
-    abc1 = [0, 25, 50]
-    abc2 = [25, 50, 75]
-    young = fuzz.membership.trimf(X, abc1)
-    middle_aged = fuzz.membership.trimf(X, abc2)
-
-    # Compute the different operations using inbuilt functions.
-    one = np.ones(75)
-    zero = np.zeros((75,))
-    # 1. Union = max(µA(x), µB(x))
-    union = fuzz.fuzzy_or(X, young, X, middle_aged)[1]
-    # 2. Intersection = min(µA(x), µB(x))
-    intersection = fuzz.fuzzy_and(X, young, X, middle_aged)[1]
-    # 3. Complement (A) = (1- min(µA(x))
-    complement_a = fuzz.fuzzy_not(young)
-    # 4. Difference (A/B) = min(µA(x),(1- µB(x)))
-    difference = fuzz.fuzzy_and(X, young, X, fuzz.fuzzy_not(middle_aged)[1])[1]
-    # 5. Algebraic Sum = [µA(x) + µB(x) – (µA(x) * µB(x))]
-    alg_sum = young + middle_aged - (young * middle_aged)
-    # 6. Algebraic Product = (µA(x) * µB(x))
-    alg_product = young * middle_aged
-    # 7. Bounded Sum = min[1,(µA(x), µB(x))]
-    bdd_sum = fuzz.fuzzy_and(X, one, X, young + middle_aged)[1]
-    # 8. Bounded difference = min[0,(µA(x), µB(x))]
-    bdd_difference = fuzz.fuzzy_or(X, zero, X, young - middle_aged)[1]
-```
-# test markdown text 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
+My first corporate experience was gained in the Java world. It was a time where I loved Jetbrains products. But right now trying to find free alternative and I decided to focus use VSC as my main IDE because it's free and have a lot of extensions and support a lot of different languages and technologies.
